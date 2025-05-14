@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Message App</title>
+    <title>Message Board</title>
     <link
       rel="stylesheet"
       href="styles/styles.css"
@@ -18,14 +18,19 @@
       href="https://fonts.googleapis.com/css2?family=Coiny&family=Patrick+Hand&family=Patrick+Hand+SC&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="/images/cursor.png"
+      type="image/x-icon"
+    />
   </head>
-  <body class="bg-[url(/images/bg.jpg)] bg-center bg-cover">
+  <body class="bg-[#CBD1DB]">
     <%- include('header.ejs') %>
     <div class="py-10 px-5 flex gap-y-1 flex-wrap">
       <% message.forEach((msg) => { %>
       <a href="/message/<%=msg.id %>"
         ><div
-          class="w-[24vw] h-[44vh] p-8 <%= msg.bg %> <%=msg.rotation %> hover:rotate-0 transition hover:duration-400 hover:scale-110 hover:border-4 border-gray-500 shadow-2xl hover:z-1 ease-in-out cursor-pointer hover:p-7"
+          class="w-[24vw] h-[44vh] p-8 <%= msg.bg %> <%=msg.rotation %> hover:rotate-0 transition hover:duration-400 hover:scale-110 hover:border-4 border-gray-500 relative shadow-2xl hover:z-20 ease-in-out cursor-pointer hover:p-7"
         >
           <div class="flex justify-between">
             <div class="flex gap-2 text-2xl">
@@ -42,5 +47,6 @@
       >
       <%})%>
     </div>
+    <%- include('footer') %>
   </body>
 </html>

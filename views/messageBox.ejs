@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Message App</title>
+    <title>Message Board</title>
     <link
       rel="stylesheet"
       href="/styles/styles.css"
@@ -18,9 +18,27 @@
       href="https://fonts.googleapis.com/css2?family=Coiny&family=Patrick+Hand&family=Patrick+Hand+SC&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="/images/cursor.png"
+      type="image/x-icon"
+    />
   </head>
-  <body>
+  <body class="bg-[#CBD1DB]">
     <%- include('header.ejs') %>
+    <div
+      class="absolute top-32 left-12 text-xl cursor-pointer font-body font-semibold"
+    >
+      <a
+        href="/"
+        class="group hover:scale-105 transition duration-200"
+      >
+        Go Back
+        <span
+          class="absolute left-0 bottom-0 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"
+        ></span>
+      </a>
+    </div>
     <div class="flex justify-center items-center mt-[15vh]">
       <div
         class="w-[44vw] h-[54vh] p-8 <%=item.bg %> -rotate-6 hover:rotate-0 transition hover:duration-400 hover:scale-110 hover:border-4 border-gray-500 shadow-2xl hover:z-1 ease-in-out cursor-pointer hover:p-7 overflow-y-auto"
