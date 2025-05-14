@@ -1,5 +1,6 @@
 const message = [
     {
+        id: 1,
         text: 'Hi there!',
         user: 'Abhay',
         added: 'Thu, Apr 13th',
@@ -7,6 +8,7 @@ const message = [
         rotation: 'rotate-5'
     },
     {
+        id: 2,
         text: 'How are you?!',
         user: 'Ankit',
         added: 'Fri, Apr 17th',
