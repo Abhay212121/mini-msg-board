@@ -2,12 +2,16 @@ const message = [
     {
         text: 'Hi there!',
         user: 'Abhay',
-        added: new Date()
+        added: 'Thu, Apr 13th',
+        bg: 'bg-[#A6D6D6]',
+        rotation: 'rotate-5'
     },
     {
         text: 'How are you?!',
         user: 'Ankit',
-        added: new Date()
+        added: 'Fri, Apr 17th',
+        bg: 'bg-[#F4F8D3]',
+        rotation: '-rotate-5'
     }
 ]
 

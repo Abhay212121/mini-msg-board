@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-head: "Coiny", system-ui;
+  --font-body: "Patrick Hand", cursive;
+  --font-data: "Patrick Hand SC", cursive;
+}

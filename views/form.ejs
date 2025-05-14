@@ -1,20 +1,45 @@
-<form
-  method="POST"
-  action="/new"
->
-  <h1>New Message</h1>
-  <input
-    type="text"
-    placeholder="Enter UserName"
-    name="userName"
-  />
-  <input
-    type="text"
-    placeholder="Enter your message"
-    name="userMessage"
-  />
-  <input
-    type="submit"
-    value="Submit"
-  />
-</form>
+<html>
+  <head>
+    <title>Message App</title>
+    <link
+      rel="stylesheet"
+      href="styles/styles.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Patrick+Hand&family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('header.ejs') %>
+    <form
+      method="POST"
+      action="/new"
+    >
+      <h1>New Message</h1>
+      <input
+        type="text"
+        placeholder="Enter UserName"
+        name="userName"
+      />
+      <input
+        type="text"
+        placeholder="Enter your message"
+        name="userMessage"
+      />
+      <input
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </body>
+</html>
