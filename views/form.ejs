@@ -24,7 +24,7 @@
       type="image/x-icon"
     />
   </head>
-  <body class="bg-[#CBD1DB]">
+  <body class="bg-[#CBD1DB] overflow-x-hidden">
     <%- include('header.ejs') %>
     <div class="flex justify-center h-[80vh]">
       <form
@@ -46,6 +46,7 @@
           placeholder="Enter UserName"
           name="userName"
           class="border py-1 px-2 w-[80%] font-data bg-white"
+          required
         />
         <textarea
           type="text"

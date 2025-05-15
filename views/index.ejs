@@ -24,11 +24,13 @@
       type="image/x-icon"
     />
   </head>
-  <body class="bg-[#CBD1DB]">
+  <body class="bg-[#CBD1DB] overflow-x-hidden">
     <%- include('header.ejs') %>
     <div class="py-10 px-5 flex gap-y-1 flex-wrap min-h-[83%]">
       <% message.forEach((msg) => { %>
-      <a href="/message/<%=msg.id %>"
+      <a
+        href="/message/<%=msg.id %>"
+        class="w-[24vw] h-[44vh]"
         ><div
           class="w-[24vw] h-[44vh] p-8 <%= msg.bg %> <%=msg.rotation %> hover:rotate-0 transition hover:duration-400 hover:scale-110 hover:border-4 border-gray-500 relative shadow-2xl hover:z-20 ease-in-out cursor-pointer hover:p-7"
         >

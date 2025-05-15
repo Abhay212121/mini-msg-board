@@ -24,7 +24,7 @@
       type="image/x-icon"
     />
   </head>
-  <body class="bg-[#CBD1DB]">
+  <body class="bg-[#CBD1DB] overflow-x-hidden">
     <%- include('header.ejs') %>
     <div class="h-screen">
       <div
@@ -42,7 +42,7 @@
       </div>
       <div class="flex justify-center items-center my-[15vh]">
         <div
-          class="w-[44vw] h-[54vh] p-8 <%=item.bg %> -rotate-6 hover:rotate-0 transition hover:duration-400 hover:scale-110 hover:border-4 border-gray-500 shadow-2xl hover:z-1 ease-in-out cursor-pointer hover:p-7 overflow-y-auto"
+          class="w-[44vw] break-words h-[54vh] p-8 <%=item.bg %> -rotate-6 hover:rotate-0 transition hover:duration-400 hover:scale-110 hover:border-4 border-gray-500 shadow-2xl hover:z-1 ease-in-out cursor-pointer hover:p-7 overflow-y-auto"
         >
           <p class="font-data text-4xl"><%= item.user %>'s Message:</p>
           <div class="font-data text-3xl"><%= item.added %></div>
